@@ -2,10 +2,23 @@
 using namespace std;
 
 int main(){
+    int x;
+    int even = 0;
+    int odd = 0;
     cout << "Enter an integer: ";
-    cout << "#Even numbers = ";
-    cout << "#Odd numbers = ";
-    cout << "5555";
-    cout << "a";
+    cin >> x;
+    while(x != 0){
+    if(x%2 == 0){
+        even++;
+    }
+    else{
+        odd++;
+    }
+    cout << "Enter an integer: ";
+    cin >> x;
+    }
+    cout << "#Even numbers = " << even << "\n";
+    cout << "#Odd numbers = " << odd;
+
     return 0;
 }
